@@ -1,7 +1,10 @@
 'use client'
 
+import { Hind } from "next/font/google";
+import AboutMe from "./components/AboutMe/AboutMe";
+import CallToAction from "./components/CallToAction/CallToAction";
 import HomeComponent from './components/HomeComponent/HomeComponent';
-import { Hind } from "next/font/google"
+import MySlider from "./components/SliderCard/MySlider";
 
 const hind = Hind({
 	subsets: ["latin"],
@@ -26,7 +29,7 @@ export default function Home() {
 				transform: "translate(0px, -20px)"
 			}}
 	    		>
-	    		portfolio
+	    		Portfolio
 	    		</p>
 	    		<div
 				style={{
@@ -39,13 +42,24 @@ export default function Home() {
 				Recent Works
 				</p>
 				<p
-				className={`max-w-2xl md:pl-[80px] px-5 text-[16px] text-[#47626d] leading-8 mt-5 ${hind.className}`}
+				className={`max-w-4xl md:pl-[80px] px-5 text-[16px] text-[#47626d] leading-8 mt-5 ${hind.className}`}
 				>
-				describe your projects.
+				In this section you can check five recent projects of mine. I created games such as PacMan, Pong and Space Invaders, a portfolio website in Sass, and also 
+				a few lessons for basic algorithm and data structure. 
+				<br></br>
+				Please, click on each link to see more. There's a link attached to my GitHub profile as well where you can read 
+				and download the source code as well.
 				</p>
 	    		</div>
 	    	</div>
+	    	<div
+			style={{transform: "translate(0px, -170px" }}>
+	    		<MySlider />
+	    	</div>
 	    </div>
+
+	    <AboutMe />
+	    <CallToAction />
     </main>
   );
 }

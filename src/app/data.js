@@ -22,6 +22,8 @@ export const AboutData = [
     array: [
       "HTML / CSS3",
       "javaScript (ES6)",
+      "Java",
+      "Sass, SCSS pre-compiler",
       "ReactJS",
       "NextJS",
       "TailwindCSS",
@@ -34,13 +36,9 @@ export const AboutData = [
     title: "Back-end Developer",
     img: "/third.svg",
     array: [
-      "NodeJS / Express.js",
       "MongoDB / MySQL / MSSQL",
       "Next.js (API)",
-      "PHP",
       "WordPress Theme Dev",
-      "WordPress Plugin Dev.",
-      "ASP (Once upon a time)",
     ],
   },
   {
@@ -48,13 +46,7 @@ export const AboutData = [
     title: "DevOps and Admin",
     img: "/fourth.svg",
     array: [
-      "Docker / CI CD",
-      "Apache / Nginx",
-      "CentOS / Ubuntu",
-      "Windows Server / IIS",
-      "Mail Servers / DNS Servers",
-      "Firewalls / Security",
-      "VMWare ESXi",
+      "Docker / CI CD (Basics)",
     ],
   },
   {
@@ -76,57 +68,58 @@ export const AboutData = [
     title: "Tools and Things",
     img: "/sisxth.svg",
     array: [
+      "NanoEditor (Linux)",
+      "Vi/Vim (Linux) (basics)",
+      "Eclipse",
       "VSCode",
-      "Git / Github",
+      "IntelliJ Idea(basics)",
+      "Git / Github/ GithubCLI",
+      "BatchScripting in CMD (Windows)",
       "Bash / Powershell",
-      "NPM / Yarn",
-      "Plesk Control Panel",
-      "Vercel / Stormkit / Netlify",
-      "Postman / Insomnia",
+      "NPM",
+      "Vercel ",
     ],
   },
 ];
 
-
-// this is for the slider 
+// this data is for the slider:
 export const DataArray = [
   {
-    title: "Personal Portfolio Website Using Reactjs",
-    name: "Ultimate ReactJs portfolio",
-    des: "I have made this project in 2022  to show thousands of students all over the world  how to make Reactjs portfolio.",
-    des1: "This project was made using, Ractjs, Nextjs, Expressjs, Nodejs, Rxjs Bootsrap and many more!",
-    images: ["/reactportfolio.png", "/2.webp", "/3.webp", "/4.webp"],
+    title: "Pac-Man retro game",
+    name: "Pac-Man retro game, created using Canvas",
+    des: "I have made this project in early 2024  mostly to learn javascript OOP while having fun!",
+    des1: "this project was very hard at the beginning (it took me around four weeks), but thanks to that I had the opportunity to better learn JavaScript and programming in general.",
+    images: ["/pacman1.PNG", "/pacmaneventcode.PNG", "/3.webp", "/4.webp"],
   },
   {
-    title: "Management Consulting Company Web Design",
-    name: "edubaba Management Consultants",
-    des: "We buit this project for edubaba  Management Consultants.",
-    des1: "",
-
-    images: ["/hotel01.png", ],
+    title: "Pong Classic Game, the ground-stone of programming logic!",
+    name: "Pong game",
+    des: "For me, programming a Pong game, using only JavaScript and Canvas, was the best way to learn the very basics of programming, because user movements are limited, and there's no AI involved.",
+    des1: "I created classes for both paddles and the ball. Each class instance deployed its own logic for collision detection between paddles and the ball. Velocity can be controlled by both users, thanks to event listeners attached to specific keys. Canva Animation Frame will stop based on losing conditionals. For creative purposes, since the structure of this game is very straightforward, it could be interesting to implement modern layouts by using frameworks for 3d rendering such as Three.js.",
+    images: ["/pong-game.PNG", ],
   },
   {
-    title: "Food Delivery Company WebSite",
-    name: "Yum Food Company",
-    des: "We did  this project for Yum Foods Located in USA.",
-    des1: "This website's graphic design is fantastic. Animated sliders are painstakingly built and created in WordPress with Revolution Slider. All of the product photos are photo manipulations created in Adobe Photoshop.",
+    title: "Space Invaders, the game, with PixelArt animations and Canvas",
+    name: "Space Invaders",
+    des: "Generating a group of the same class with random size may be difficult at first glance, but ",
+    des1: "Generating a group of the same class with random size may be difficult at first glance, but ",
 
-    images: ["/yumfood.jpg", "/yumfood2.png"],
+    images: ["/space-invaders-game.PNG"],
   },
   {
-    title: "Real Estate and Property Management Project",
-    name: "Inans Property Management ",
-    des: "We built this project for inans group LTD",
-    des1: "Aside from its gorgeous design, this website is backed by an outstanding plugin that allows owners and agencies to simply display different properties in the neighbourhood and create an online showcase in an appealing manner for home buyers and tenants..",
+    title: "Algorithm and Data Structure in Java: explained!",
+    name: "Algorithm / Data Structure Lessons/Explanations",
+    des: "This is my work-in-progress: in the very next future I want to create a visual representation of each chapter with its own separate HTML/CSS animation, to visually represent the inner working process for each algorithm.",
+    des1: "From basic array methods to Binary Search Tree, Queues and Stacks and heaps, this project for educational purposes will help me and (hopefully) other learners to grasp unintuitive concepts easily.",
 
-    images: ["/property1.png"],
+    images: ["/algorithms.PNG", "/algorithms-2.PNG"],
   },
   {
-    title: "Crypto Trading Website",
-    name: "Crypto Trading project",
-    des: "We buit this website for BigMoney group",
-    des1: "This project was built to enable clients all over the world to buy and sell their crypto.",
+    title: "Sass Portfolio Website",
+    name: "Sass showcase project",
+    des: "This was intended as my first portfolio website. Later on, I found out there are more in-demand frameworks other than sass and scss for styling... Still, I believe is good to understand both logic and sintax of this precompiler. It can be very useful, and more precise than library such as TailwindCSS or",
+    des1: "This project employs advanced scss features, such as functions, media responsiveness, and scss conditionals.",
 
-    images: ["/crypto5.png", "/crypto3.png", "/crypto1.png"],
+    images: ["/sass-website.PNG"],
   },
 ];

@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 // import Recoleta from '../../public/fonts/Recoleta-Black';
 import Header from "../app/components/Header/Header";
+import Footer from "../app/components/Footer/Footer";
 import "./globals.css";
 
 // setting up the fonts to be usdd
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
       <body className={poppins.className}>
         <Header />
         {children}
+	<Footer />  
         </body>
     </html>
   );

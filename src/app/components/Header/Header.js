@@ -1,7 +1,7 @@
-"use client";
-import React, { useEffect, useState } from 'react';
-import '../Header/DiagonalDrawer.css';
-import Drawer from './DiagonalDrawer';
+'use client'
+import React, { useEffect, useState } from 'react'
+import '../Header/DiagonalDrawer.css'
+import Drawer from './DiagonalDrawer'
 
 export default function Header() {
 
@@ -36,10 +36,10 @@ export default function Header() {
 			/>
 		</div>
 		<header className={`${isScrolled ? "headerShow"  :  ""} w-full fixed top-0 z-50 transition-all duration-500`}
-			style={{
-				backgroundColor: isScrolled ? "#fff" : "transparent",
-				boxShadow: isScrolled ? "#48afde -10px 25px 50px 10px" : ""
-			}}
+//			style={{
+//				backgroundColor: isScrolled ? "#fff" : "transparent",
+//				boxShadow: isScrolled ? "#48afde -10px 25px 50px 10px" : ""
+//			}}
 		>
 			{/* blue rectangle on top of the screen related to the Drawer component: */}
 			<div className="relative">
@@ -63,7 +63,7 @@ export default function Header() {
 					{selectedIndex1 === 0 ? (
 						<span className="menu-effect transform opacity-100 -rotate-12 group-hover:-rotate-12 group-hover:opacity-100"></span>
 					): (
-						<span className="menu-effect transform opacity-0 rotate-12 group-hover:-rotate-12 group-hover:opacity-100"></span>
+						<span className="menu-effect transform opacity-100 rotate-12 group-hover:-rotate-12 group-hover:opacity-100"></span>
 					)}
 						<a className={`menu-item ${selectedIndex1 === 0 ? "text-black" : ""} text-[#666d47] group-hover:text-black`}
 						href="/#home"
@@ -74,9 +74,9 @@ export default function Header() {
 					{selectedIndex1 === 1 ? (
 						<span className="menu-effect transform opacity-100 -rotate-12 group-hover:-rotate-12 group-hover:opacity-100"></span>
 					): (
-						<span className="menu-effect transform opacity-0 rotate-12 group-hover:-rotate-12 group-hover:opacity-100"></span>
+						<span className="menu-effect transform opacity-100 rotate-12 group-hover:-rotate-12 group-hover:opacity-100"></span>
 					)}
-						<a className={`menu-item ${selectedIndex1 === 1 ? "text-black" : ""} text-[#666d47] group-hover:text-black`}
+						<a className={`menu-item ${selectedIndex1 === 0 ? "text-black" : ""} text-[#666d47] group-hover:text-black`}
 						href="/#portfolio"
 						onClick={()=> setSelectedIndex1(1)}
 						>Portfolio</a>
@@ -85,9 +85,9 @@ export default function Header() {
 					{selectedIndex1 === 2 ? (
 						<span className="menu-effect transform opacity-100 -rotate-12 group-hover:-rotate-12 group-hover:opacity-100"></span>
 					): (
-						<span className="menu-effect transform opacity-0 rotate-12 group-hover:-rotate-12 group-hover:opacity-100"></span>
+						<span className="menu-effect transform opacity-100 rotate-12 group-hover:-rotate-12 group-hover:opacity-100"></span>
 					)}
-						<a className={`menu-item ${selectedIndex1 === 2 ? "text-black" : ""} text-[#666d47] group-hover:text-black`}
+						<a className={`menu-item ${selectedIndex1 === 0 ? "text-black" : ""} text-[#666d47] group-hover:text-black`}
 						href="/#about-me-component"
 						onClick={()=> setSelectedIndex1(2)}
 						>AboutMe</a>
@@ -96,10 +96,10 @@ export default function Header() {
 					{selectedIndex1 === 3 ? (
 						<span className="menu-effect transform opacity-100 -rotate-12 group-hover:-rotate-12 group-hover:opacity-100"></span>
 					): (
-						<span className="menu-effect transform opacity-0 rotate-12 group-hover:-rotate-12 group-hover:opacity-100"></span>
+						<span className="menu-effect transform opacity-100 rotate-12 group-hover:-rotate-12 group-hover:opacity-100"></span>
 					)}
-						<a className={`menu-item ${selectedIndex1 === 3 ? "text-black" : ""} text-[#666d47] group-hover:text-black`}
-						href="/#hire-me-component"
+						<a className={`menu-item ${selectedIndex1 === 0 ? "text-black" : ""} text-[#666d47] group-hover:text-black`}
+						href="/page/contactme"
 						onClick={()=> setSelectedIndex1(3)}
 						>HireMe</a>
 					</li>
