@@ -153,7 +153,7 @@ export default function MySlider() {
 
     <Slider {...settings}>
 		{DataArray.map((item, index) => (
-		  <div className="my-slider">
+		  <div key={index} className="my-slider">
 			<SliderCard item={item} id={index} index={index} />
 		  </div>
 		))}

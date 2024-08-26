@@ -67,7 +67,7 @@ export default function AboutMe() {
               className={`w-full  text-[#223740] mr-0 mb-5 lg:mr-4 ${hind.className} `}
             >
               Hi there, welcome to my website!
-              My name is Adriano Gratani, here I'm going to tell you something about me! I was born and raised in Sardinia, Italy.
+              My name is Adriano Gratani, here I am going to tell you something about me! I was born and raised in Sardinia, Italy.
               There, I studied Classical Guitar at the college and I worked in that field for a few years. 
               Soon I felt lack of enthusiasm in my pupils, and too much distraction in their eyes: because of my passion towards music and its discipline, I though there
               was no point striving for such a career, so I moved to other paths (though Classical music is still a great passion of mine).
@@ -78,13 +78,13 @@ export default function AboutMe() {
               many coders and wanna be coders as well - just like me!
               <br></br>
 
-              At first was really, really intimidating: declaring variables, function parameters, recursion and async methods... I just couldn't get it!!
+              At first was really, really intimidating: declaring variables, function parameters, recursion and async methods... I just couldn&apos;t get it!!
               So, after one month I decided to apply for a Coursera Front-end developer program (The most famous one, which is provided by a famous SNS company). Bad decision!!! 
-              (even though many peers at meetups told me not to choose that... My fault..) It was mostly theory, and I didn't like the practical exercise. But I supposed it was good to get the degree,
-              so I decided to stick to it 'till the end. 
+              (even though many peers at meetups told me not to choose that... My fault..) It was mostly theory, and I didn&apos;t like the practical exercise. But I supposed it was good to get the degree,
+              so I decided to stick to it until the end. 
               after finishing that, I built many projects, mostly in ReactJs, but I also learned Java and studied many algorithms (as you can see in my portfolio section).
               Most of my project are retro games because coding a videogame requires a lot of problem-solving abilities and a bit of algorithms as well... So in my opinion
-              a video game can be the best showcase of anyone's skill!!!
+              a video game can be the best showcase of anyone&apos;s skill!!!
               <br></br>
               Over this year, I prepared mostly for front-end positions, so I studied JavaScript, the React Library, and NextJs framework (actually, this website
               is bulit in NextJs, TailwindCss and JavaScript), plus HTML, CSS, and Bootstrap as well! 
@@ -159,8 +159,8 @@ export default function AboutMe() {
                 <ul
                   className={`${hind.className} font-[300] list-disc text-[#47626d] ml-8 lg:ml-10 text-base lg:text-lg  transition duration-500 transform opacity `}
                 >
-                  {mapData.array.map((skills) => (
-                    <li>{skills}</li>
+                  {mapData.array.map((skills, index) => (
+                    <li key={index}>{skills}</li>
                   ))}
                 </ul>
               </section>

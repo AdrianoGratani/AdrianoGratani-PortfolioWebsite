@@ -14,7 +14,7 @@ const hind = Hind({
   weight: ["300", "400", "500", "600", "700"],
 });
 
-export default function page() {
+export default function Page() {
   const [state, setState] = useState({ name: "", email: "", phoneNumber: "", subject: "", message: "", });
   const [loading, setLoading] = useState(false);
   
@@ -56,7 +56,7 @@ export default function page() {
             </div>
             <div className="flex justify-center text-center mt-[10px] md:w-[700px]">
               <p className="text-white font-[300px] text-center text-xl">
-                My skills and my will to learn more everyday about coding are available for your goals, Let's stay in touch!
+                My skills and my will to learn more everyday about coding are available for your goals, Let&apos;s stay in touch!
               </p>
             </div>
           </div>
