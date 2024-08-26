@@ -47,7 +47,7 @@ export default function Home() {
 				In this section you can check five recent projects of mine. I created games such as PacMan, Pong and Space Invaders, a portfolio website in Sass, and also 
 				a few lessons for basic algorithm and data structure. 
 				<br></br>
-				Please, click on each link to see more. There's a link attached to my GitHub profile as well where you can read 
+				Please, click on each link to see more. There&apos;s a link attached to my GitHub profile as well where you can read 
 				and download the source code as well.
 				</p>
 	    		</div>
