@@ -2,7 +2,7 @@
 import { Hind } from "next/font/google";
 import React, { useState } from "react";
 import { AiFillMail, AiOutlineFieldTime } from "react-icons/ai";
-import { FaHeadphones, FaLocationDot } from "react-icons/fa6";
+import { FaLocationDot } from "react-icons/fa6";
 import { FiPhoneCall } from "react-icons/fi";
 // import { ToastClassName, ToastContainer, toast } from "react-toastify";
 import { ToastContainer, toast } from "react-toastify";
@@ -41,8 +41,8 @@ export default function page() {
   return (
     <React.Fragment>
       <ToastContainer />
-      <div className="flex flex-col items-center justify-center w-full pt-[80px] mt-4">
-        <div className="flex flex-col items-center justify-center bg-[#48afde] bg-cover bg-center w-full h-[400px]">
+      <div className="flex flex-col items-center justify-center w-full pt-[80px] pb-[80px] mt-4">
+        <div className="flex flex-col items-center justify-center bg-[#48afde] w-full h-[400px]">
           <div className="flex flex-col items-center justify-center w-full h-full bg-[#223740]">
             <div className="text-center bg-[#48afde] py-[3px] px-[11px] tracking-wide uppercase font-semibold text-[20px] text-white rounded-lg">
               <a href="#contact" className="cursor-pointer">
@@ -62,7 +62,7 @@ export default function page() {
           </div>
         </div>
 
-        <div className="flex">
+        <div className="flex pb-40">
           {/* card */}
           <div className="px-[20px]">
             <div className="sm:flex  gap-[20px] mt-[50px] max-w-[1105px] w-full h-full">
@@ -187,15 +187,15 @@ export default function page() {
         {/* contact me page layout: */}
         <div
           id="#contact"
-          className="flex flex-col xl:flex-row justify-center gap-[60px] mt-[10px] px-[30px] max-w-[1105px] m-auto p-10 mb-[-150px] "
+          className="flex flex-col xl:flex-row justify-center gap-[60px] mt-[40px] px-[30px] max-w-[1105px] m-auto p-10 mb-[-150px] "
         >
           <div className="hidden md:block relative w-[50px] xl:w-[550px] rounded-xl md:w-full lg:w-[50%]">
             <div className="absolute h-full w-full bg-gradient-to-t from-[#223740] via-[#223740] shadow-inner opacity-70">
               <div className="absolute inset-0 flex flex-col gap-[20px] items-center justify-center text-white shadow-lg">
-                <div className="text-4xl xl:mt-[150px] mt-0 rounded-full px-[15px] py-[15px] bg-[#48afde] text-white">
+                {/* <div className="text-4xl xl:mt-[150px] mt-0 rounded-full px-[15px] py-[15px] bg-[#48afde] text-white">
                   <FaHeadphones />
-                </div>
-                <div className="font-semibold text-[24px]">
+                </div> */}
+                {/* <div className="font-semibold text-[24px]">
                   Contact Me for more infos!!!
                 </div>
                 <div className="">
@@ -203,25 +203,21 @@ export default function page() {
                     {" "}
                     say something here...
                   </p>
-                </div>
-                <button className="bg-[#48afde] text-white mb-[30px] px-4 py-2 hover:bg-[#223740] transition-color rounded-xl">
-                  Send Me a Text
-                </button>
+                </div> */}
+                  {/* <button className="bg-[#48afde] text-white mb-[30px] px-4 py-2 hover:bg-[#223740] transition-color rounded-xl">
+                    Send Me a Text
+                  </button> */}
               </div>
             </div>
           </div>
         </div>
 
         {/*  don't need this.... delete it */}
-        <div className="flex flex-col gap-[20px]">
-          <div className="">Contact Us</div>
-          <div className="">
-            <p>I dont really need this section</p>
-          </div>
-
-          {/* form: */}
+        <div className="flex flex-col gap-[10px] m-auto">
+          <div className="">Contact Me</div>
+        {/* form: */}
           <form
-            className={`flex flex-col sm:flex-row gap-[20px] ${hind.className}`}
+            className={`flex flex-col flex-grow-4 sm:flex-row gap-[20px] ${hind.className}`}
             onSubmit={handleSubmit}
           >
             <div
@@ -239,7 +235,7 @@ export default function page() {
               <input
                 type="email"
                 name="email"
-                placeholder="Enter Your Name..."
+                placeholder="Enter Your e-mail..."
                 required
                 onChange={handleChange}
                 value={state.email}
@@ -248,7 +244,7 @@ export default function page() {
               <input
                 type="text"
                 name="phoneNumber"
-                placeholder="Enter Your Name..."
+                placeholder="Enter Your Phone Number..."
                 required
                 onChange={handlePhoneChange}
                 value={state.phoneNumber}
@@ -257,29 +253,32 @@ export default function page() {
               <input
                 type="text"
                 name="subject"
-                placeholder="Enter Your Name..."
+                placeholder="Which Subject..."
                 required
                 onChange={handleChange}
                 value={state.subject}
-                className="px-[12px] outline-none rounded-md py-[12px] flex-1 bg-gray-200"
+                className="px-[12px]  outline-none rounded-md py-[12px] flex-1 bg-gray-200"
               />
             </div>
+            
+            <div className="flex flex-col gap-[10px] m-auto">
+              <div className={`${hind.className}`}>
+                <textarea
+                  required
+                  name="message"
+                  placeholder="Text goes here..."
+                  className="px-[12px] w-full outline-none h-[180px] rounded-md py-[12px] flex-1 bg-gray-200"
+                />
+              </div>
+              {
+                  loading && (<div className="mb-3 text-center ml-5 w-6 h-6 border-t-2 border-blue-600 border-solid animate-spin rouned-full"></div> )
+              }
+              <div>
+                <button className="bg-[#48afde] w-full sm:w-auto px-[30px] py-[12px] hover:bg-[#223740] transition-colors duration-300 font-semibold rounded-lg text-white ">
+                  Send Your Message
+                </button>
+              </div>
 
-            <div className={`${hind.className}`}>
-              <textarea
-                required
-                name="message"
-                placeholder="Text your message here..."
-                className="px-[12px] w-full outline-none h-[180px] rounded-md py-[12px] flex-1 bg-gray-200"
-              />
-            </div>
-            {
-                loading && (<div className="mb-3 text-center ml-5 w-6 h-6 border-t-2 border-blue-600 border-solid animate-spin rouned-full"></div> )
-            }
-            <div>
-              <button className="bg-[#48afde] w-full sm:w-auto px-[30px] py-[12px] hover:bg-[#223740] transition-colors duration-300 font-semibold rounded-lg text-white ">
-                Send Your Message
-              </button>
             </div>
           </form>
         </div>
