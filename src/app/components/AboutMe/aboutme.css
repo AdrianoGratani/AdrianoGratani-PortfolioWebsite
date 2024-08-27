@@ -2,7 +2,7 @@
     perspective: 800px;
     cursor: pointer;
     display: flex;
-    justify-content: right ;
+    justify-content: right;
 }
 
 .card-inner {
