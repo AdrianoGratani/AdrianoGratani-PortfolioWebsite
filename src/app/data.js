@@ -7,12 +7,12 @@ export const AboutData = [
     img: "/first.svg",
     array: [
       "Information Architecture",
-      "Pen and Paper",
       "Adobe Photoshop",
       "Adobe Illustrator",
       "Figma",
       "Framer",
       "Typography / Spacing / ...",
+      "Pen and Paper",
     ],
   },
   {

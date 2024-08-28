@@ -59,37 +59,47 @@ export default function AboutMe() {
           <h1 className="relative font-recoletaBlack text-5xl  text-[#48AFDE] mb-5 -mt-40  md:px-24 px-5">
             About My Self
           </h1>
-          <h4 className="relative w-full font-[300] md:w-3/4 lg:w-2/3 xl:w-1/2 font-recoleta text-[#223740] text-2xl mb-10 px-5 md:px-24">
-            Knack of Building application with frontend and backend operation
-          </h4>
+          {/* <h4 className="relative w-full font-[300] md:w-3/4 lg:w-2/3 xl:w-1/2 font-recoleta text-[#223740] text-2xl mb-10 px-5 md:px-24">
+            Knack of Building application with frontend  operations
+          </h4> */}
           <section className="relative flex flex-col lg:flex-row px-5 md:px-24">
             <p
               className={`w-full lg:w-1/3 text-[#223740] mr-0 mb-5  lg:mr-4 font-[200] ${hind.className}`}
             >
               {" "}
-              My name is Ehizeex. A professional and enthusiastic full-stack
-              developer and designer. However, I am more than just your average
-              programmer or designer. I&apos;ve been running my own business for the
-              past 7 years and I was continually coming up with new concepts.
-              I&apos;m very fluid and never stop learning and adapting to new
-              situations.
+              Welcome here. I&apos;m Adriano, and here I want to tell you something about myself. Born and raised in Sardinia,
+              I graduated from Music College with a degree in Classical Music, in which field I have been working (as classical guitar teacher)
+              for about 2 years. But then, I felt something was missing.<br></br>
+              Being aware of this, I suddenly realized that moving abroad, changing culture, job and replacing new habits, could have been the best for me.
+              That&apos;s why I chose to settle down first near Milano, where I lived and worked for about one year, and later in Germany for one more year.
+              Since I keep moving forward by nature, a chance of spending a full year in South Korea has been given to me, and I accepted immediately.
+              In fact, I spent almost two years there, mostly in Seoul, but I travelled over the whole country, and by doing so I slowly fell in love with it.
             </p>
             <p
               className={`w-full lg:w-1/3 text-[#223740] mr-0 mb-5  lg:mr-4 font-[200] ${hind.className}`}
             >
               {" "}
-              This attitude propelled me on an endless journey to learn a
-              variety of skills, including Teaching skill, UI/UX, design,
-              front-end and back-end development, devOps, SEO and optimisations,
-              server management, product design, software design, database
-              design, and many more...
+              While living in Seoul I discoverd about Coding Meetups organized by FreeCodeCamp, and I joined many of them.
+              It was there that I started to learn about HTML and CSS. Since then, I have become more and more curious about it,
+              and started to think that maybe this is the right field for me. So, where to start? My knowledge, back then, was so limited...
+              <br></br>
+              Organizers and fellow peers have been kind enough to help me a lot through the entire process, by showing me courses, free courses,
+              and coding bootcamps. For me it was an entire new world!!!
+              By being already employed at that time, it was possible for me only to study at night time, at my own pace, that&apos;s why 
+              I studied, for the first four months, with a Front-End developer course provided by Coursera. 
             </p>
             <p
               className={`w-full lg:w-1/3 text-[#223740] mr-0 mb-5  lg:mr-4 font-[200] ${hind.className}`}
             >
               {" "}
-              When I encounter a new problem, I usually conduct extensive
-              research on it in order to comprehend it and discover cutting-edge
+              After that, I started to build many projects, mostly in React, vanilla JS, HTML, CSS (or TailwindCSS), and algorithms as well (mostly in Java).
+              I love to learn and to teach/explain as well. Classical music, because of the discipline required to learn properly,
+              granted me the ability to learn, in a fast and efficient way, a wide range of knowledge in many different areas.
+              This attitude of mine propelled me on an endless journey to learn a variety of skills, including Teaching skill, UI/UX, design,
+              front-end and back-end development, and even a little bit of devOps, SEO and optimisations,
+              server management, software design, and many other things...
+              as mentioned earlier, when I encounter a new problem, I usually conduct extensive
+              research on it, in order to comprehend it and discover cutting-edge
               and innovative approaches for dealing with similar problems in the
               future. As a result, it&apos;s not unexpected that I&apos;ve listed a lot of
               abilities here:
@@ -103,7 +113,7 @@ export default function AboutMe() {
           backgroundImage: "linear-gradient(45deg, #EAF7FC  70%,#48AFDE 30%)",
           width: "100%",
         }}
-        className="lg:-mt-60"
+        className="lg:-mt-100"
       >
         <section className="container flex  flex-col m-auto sm:flex-row px-5 md:px-24 mt-[50px sm:mt-0] transform translate-y-[-100px]">
           <div className=" hidden sm:flex w-full sm:w-1/2 lg:w-7/12">
