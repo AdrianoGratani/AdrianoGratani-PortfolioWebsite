@@ -58,9 +58,6 @@ export const AboutData = [
       "GraphCMS",
       "Strapi",
       "WordPress (Gutenberg)",
-      "Directus",
-      "Sanity",
-      "SiteBaan (My Own)",
     ],
   },
   {
@@ -85,11 +82,12 @@ export const AboutData = [
 // this data is for the slider:
 export const DataArray = [
   {
-    title: "Pac-Man retro game",
-    name: "Pac-Man retro game, created using Canvas",
+    title: "Pac-Man retro game created using Canvas",
+    name: "Pac-Man retro game",
     des: "I have made this project in early 2024  mostly to learn javascript OOP while having fun!",
     des1: "this project was very hard at the beginning (it took me around four weeks), but thanks to that I had the opportunity to better learn JavaScript and programming in general.",
     images: ["/pacman1.PNG", "/pacmaneventcode.PNG", "/3.webp", "/4.webp"],
+    link: "https://pacman-adrianogratanis-projects.vercel.app/"
   },
   {
     title: "Pong Classic Game, the ground-stone of programming logic!",
@@ -97,6 +95,7 @@ export const DataArray = [
     des: "For me, programming a Pong game, using only JavaScript and Canvas, was the best way to learn the very basics of programming, because user movements are limited, and there's no AI involved.",
     des1: "I created classes for both paddles and the ball. Each class instance deployed its own logic for collision detection between paddles and the ball. Velocity can be controlled by both users, thanks to event listeners attached to specific keys. Canva Animation Frame will stop based on losing conditionals. For creative purposes, since the structure of this game is very straightforward, it could be interesting to implement modern layouts by using frameworks for 3d rendering such as Three.js.",
     images: ["/pong-game.PNG", ],
+    link: "https://pong-game-adrianogratanis-projects.vercel.app/"
   },
   {
     title: "Space Invaders, the game, with PixelArt animations and Canvas",
@@ -105,6 +104,7 @@ export const DataArray = [
     des1: "Generating a group of the same class with random size may be difficult at first glance, but ",
 
     images: ["/space-invaders-game.PNG"],
+    link: "https://space-invaders-game-adrianogratanis-projects.vercel.app/"
   },
   {
     title: "Algorithm and Data Structure in Java: explained!",
@@ -113,6 +113,7 @@ export const DataArray = [
     des1: "From basic array methods to Binary Search Tree, Queues and Stacks and heaps, this project for educational purposes will help me and (hopefully) other learners to grasp unintuitive concepts easily.",
 
     images: ["/algorithms.PNG", "/algorithms-2.PNG"],
+    link: "https://github.com/AdrianoGratani/Algorithms-DS-in-Java-explained"
   },
   {
     title: "Sass Portfolio Website",
@@ -121,5 +122,6 @@ export const DataArray = [
     des1: "This project employs advanced scss features, such as functions, media responsiveness, and scss conditionals.",
 
     images: ["/sass-website.PNG"],
+    link: "https://github.com/AdrianoGratani/SASSportfolioWebsite/tree/main/dist"
   },
 ];

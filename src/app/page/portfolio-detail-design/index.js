@@ -116,8 +116,15 @@ export default function Index({ id, data, DataArray }) {
               {" "}
               {data?.des1}
             </p>
+              <span>
+                <div className="bg-[#48afde] px-5 py-8 text-center rounded-xl font-light">
+                <a href={data?.link}>
+                  <button className="">Visit my {data.name} page</button>  
+                </a>
+                </div>
+              </span>
 
-            <div className="flex flex-wrap">
+            <div className="flex flex-wrap mt-7">
               <h1 className="mr-5 text-[14px]  bg-[#63c5f1] lg:bg-[#EEF7FB]  px-2 py-1  rounded-xl font-sans  mb-4 text-white lg:text-[#6A787D]">
                 Canva/JavaScript
               </h1>
