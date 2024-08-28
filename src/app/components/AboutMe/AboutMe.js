@@ -73,7 +73,7 @@ export default function AboutMe() {
               Being aware of this, I suddenly realized that moving abroad, changing culture, job and replacing new habits, could have been the best for me.
               That&apos;s why I chose to settle down first near Milano, where I lived and worked for about one year, and later in Germany for one more year.
               Since I keep moving forward by nature, a chance of spending a full year in South Korea has been given to me, and I accepted immediately.
-              In fact, I spent almost two years there, mostly in Seoul, but I travelled over the whole country, and by doing so I slowly fell in love with it.
+              In fact, I spent almost two years there, mostly in Seoul, but I travelled over the whole country, and by doing so, I slowly fell in love with it.
             </p>
             <p
               className={`w-full lg:w-1/3 text-[#223740] mr-0 mb-5  lg:mr-4 font-[200] ${hind.className}`}
