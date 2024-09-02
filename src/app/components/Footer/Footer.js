@@ -63,7 +63,7 @@ export default function Footer() {
                 <a
                   className="group flex flex-col items-center justify-center"
                   target="_blank"
-                  href="twitter"
+                  href="https://x.com/AdrianoDev1"
                 >
                   <svg
                     stroke="currentColor"
@@ -86,7 +86,7 @@ export default function Footer() {
                 <a
                   className="group flex flex-col items-center justify-center"
                   target="_blank"
-                  href="git"
+                  href="https://github.com/AdrianoGratani"
                 >
                   <svg
                     stroke="currentColor"
@@ -109,7 +109,7 @@ export default function Footer() {
                 <a
                   className="group flex flex-col items-center justify-center"
                   target="_blank"
-                  href="dribble"
+                  href="https://dribbble.com/Adribbblian/about?utm_source=Clipboard_%22clipboard_about%22&utm_campaign=%22Adribbblian%22&utm_content=%22About%20Adribbblian%22&utm_medium=Social_Share"
                 >
                   <svg
                     stroke="currentColor"
@@ -179,7 +179,7 @@ export default function Footer() {
                 <a
                   className="group flex flex-col items-center justify-center"
                   target="_blank"
-                  href="Gmail"
+                  href="mailto:adriano.gratani1@gmail.com"
                 >
                   <svg
                     stroke="currentColor"
