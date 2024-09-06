@@ -135,8 +135,8 @@ export default function HomeComponent() {
                   </a>
                   {/* link al PDF (scaricabile) del tuo CV  */}
                   <a
-                    href="gratani.pdf"
-                    download="AdrianoGrataniCV.pdf"
+                    href="(ENG) CV-AdrianoGratani.pdf.png"
+                    download="(ENG) CV-AdrianoGratani.pdf.png"
                     className={`ml-10 cursor-pointer inline-block bg-[#47aede] transition-all duration-300 ease-in-out rounded-lg text-white py-3 px-5 font-bold mt-8 uppercase md:py-2 lg:py-3 lg:px-8 md:text-xl lg:text-base md:mt-5 xl:mt-10 hover:bg-[#223740] hover:show-lg transform hover:translate-y-1 ${hind.className}`}
                   >
                     My Resume

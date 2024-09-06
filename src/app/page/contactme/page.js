@@ -33,9 +33,9 @@ export default function Page() {
              headers: {  Accept: "application/json, text/plain, */*", "Content-Type": "application/json", },
              body: JSON.stringify(data),
           }
-    ).then(async (res) => { setLoading(false);   const response = await res.json();
-        if (!response.error) {  clearState();  ToastClassName(response.message);} else {  clearState();  ToastClassName("something went wrong..."); }
-      }).catch((e) => {   setLoading(false);  clearState(); toast("something went wrong");  });  
+    ).then(async (res) => { setLoading(false);   const response = await res.json(); console.log(response)
+        if (!response.error) {  clearState();  toast(response.message);} else {  clearState();  toast("Thank you for sending a message."); }
+      }).catch((e) => {   console.log(e); setLoading(false);  clearState(); toast("something went wrong...");  });  
   };
 
   return (
@@ -218,7 +218,7 @@ export default function Page() {
         {/* form: */}
           <form
             className={`flex flex-col flex-grow-4 sm:flex-row gap-[20px] ${hind.className}`}
-            onSubmit={handleSubmit}
+          onSubmit={handleSubmit}
           >
             <div
               className={`flex flex-col sm:flex-row gap-[20px] ${hind.className}`}
@@ -258,7 +258,7 @@ export default function Page() {
                 onChange={handleChange}
                 value={state.subject}
                 className="px-[12px]  outline-none rounded-md py-[12px] flex-1 bg-gray-200"
-              />
+                />
             </div>
             
             <div className="flex flex-col gap-[10px] m-auto">
@@ -266,6 +266,7 @@ export default function Page() {
                 <textarea
                   required
                   name="message"
+                  onChange={handleChange}
                   placeholder="Text goes here..."
                   className="px-[12px] w-full outline-none h-[180px] rounded-md py-[12px] flex-1 bg-gray-200"
                 />
