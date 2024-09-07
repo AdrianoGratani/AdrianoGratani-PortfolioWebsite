@@ -14,7 +14,7 @@ export default function Index({ id, data, DataArray }) {
   const [next, setNext] = useState();
   const [prev, setPrev] = useState();
 
-  // original code to be corrected 
+  // original code to be corrected
   // useEffect(() => {
   //   if (JSON.parse(id) === DataArray.length - 1) {
   //     setNext(0);
@@ -38,9 +38,9 @@ export default function Index({ id, data, DataArray }) {
     } else {
       setPrev(JSON.parse(id) - 1);
     }
-  },[DataArray.length, id]);
+  }, [DataArray.length, id]);
 
-  // take correction from here 
+  // take correction from here
   // useEffect(() => {
   //   if (JSON.parse(id) === DataArray.length - 1) {
   //     setNext(0);
@@ -66,7 +66,7 @@ export default function Index({ id, data, DataArray }) {
           width={0}
           height={20}
           sizes="100vw"
-          style={{ width: '100%', backgroundSize: "cover" }} // optional
+          style={{ width: "100%", backgroundSize: "cover" }} // optional
         />
       </div>
 
@@ -92,7 +92,10 @@ export default function Index({ id, data, DataArray }) {
       >
         <div className="col-span-12  lg:col-span-8 mb-20 scrol lg:px-0 sm:px-20">
           {data?.images.map((item) => (
-            <div key={item} className="flex justify-center lg:justify-end  items-center">
+            <div
+              key={item}
+              className="flex justify-center lg:justify-end  items-center"
+            >
               <Image
                 src={item}
                 alt="portfolio photos"
@@ -116,13 +119,13 @@ export default function Index({ id, data, DataArray }) {
               {" "}
               {data?.des1}
             </p>
-              <span>
-                <div className="bg-[#48afde] px-5 py-8 text-center rounded-xl font-light">
+            <span>
+              <div className="bg-[#48afde] px-5 py-8 text-center rounded-xl font-light">
                 <a href={data?.link}>
-                  <button className="">Visit my {data.name} page</button>  
+                  <button className="">Visit my {data.name} page</button>
                 </a>
-                </div>
-              </span>
+              </div>
+            </span>
 
             <div className="flex flex-wrap mt-7">
               <h1 className="mr-5 text-[14px]  bg-[#63c5f1] lg:bg-[#EEF7FB]  px-2 py-1  rounded-xl font-sans  mb-4 text-white lg:text-[#6A787D]">
@@ -141,7 +144,7 @@ export default function Index({ id, data, DataArray }) {
                 Event-Listeners
               </h1>
               <h1 className="mr-5 text-[14px]  bg-[#63c5f1] lg:bg-[#EEF7FB]  px-2 py-1  rounded-xl font-sans  mb-4 text-white lg:text-[#6A787D]">
-                Winning/Collision Conditionals 
+                Winning/Collision Conditionals
               </h1>
             </div>
           </div>

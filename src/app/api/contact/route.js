@@ -89,12 +89,12 @@ export async function POST(request) {
       return NextResponse.json({ error:false, message:"Message successfully sent! Thank you for contacting Edubaba" })
 
     }
-    return NextResponse.json({ error:true, message:'Message sent.' })
+    return NextResponse.json({ error:true, message:'Something went wrong please try again.' })
 
   }
   catch(e){
     console.log(e)
-    return NextResponse.json({ error:true, message:'Message sent.' })
+    return NextResponse.json({ error:true, message:'Something went wrong please try again.' })
 
   }
   }
