@@ -115,9 +115,9 @@ export default function AboutMe() {
         }}
         className="lg:-mt-100"
       >
-        <section className="container flex  flex-col m-auto sm:flex-row px-5 md:px-24 mt-[50px sm:mt-0] transform translate-y-[-100px]">
+        <section className="container flex  flex-col m-auto sm:flex-row px-5 md:px-24 mt-[80px sm:mt-0] transform translate-y-[-100px]">
           <div className=" hidden sm:flex w-full sm:w-1/2 lg:w-7/12">
-            <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6 mr-0 lg:mr-10">
+            <div className="mt-32 grid sm:grid-cols-2 xl:grid-cols-3 gap-6 mr-0 lg:mr-10">
               {AboutData.map((item, index) => (
                 <a key={index}
                   onClick={() => handleCardClick(item, index)}
@@ -155,7 +155,7 @@ export default function AboutMe() {
               ))}
             </div>
           </div>
-          <div className="w-full sm:w-1/2 lg:w-5/12 overflow-visible px-0 sm:pl-6 xl:px-10">
+          <div className=" mt-32 w-full sm:w-1/2 lg:w-5/12 overflow-visible px-0 sm:pl-6 xl:px-10">
             <div className="bg-white  lg:mt-0 mt-10 rounded-xl p-10 xl:p-12 shadow-accent-color relative">
             <section
                 className={`fade-left overflow-hidden ${

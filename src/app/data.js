@@ -1,4 +1,3 @@
-// this comtains the data we are gonna for AboutMe component and slider component 
 
 export const AboutData = [
   {
@@ -86,7 +85,7 @@ export const DataArray = [
     name: "Pac-Man retro game",
     des: "I have made this project in early 2024  mostly to learn javascript OOP while having fun!",
     des1: "this project was very hard at the beginning (it took me around four weeks), but thanks to that I had the opportunity to better learn JavaScript and programming in general.",
-    images: ["/pacman1.PNG", "/pacmaneventcode.PNG", "/3.webp", "/4.webp"],
+    images: ["/pacman1.PNG", "/pacmaneventcode.PNG", "/pacPic.PNG", "/pacPic.PNG"],
     link: "https://pacman-adrianogratanis-projects.vercel.app/"
   },
   {

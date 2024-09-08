@@ -147,7 +147,7 @@ export default function HomeComponent() {
             <div className="col-span-12 pt=[50px] md:pt-[130px] md:bg-transparent bg-[#d9eef7] md:pt[130px] md:col-span-7">
               {/* profile picture container: */}
               <div className="container m-auto">
-                <div className="max-w-screen-lg m-auto">
+                <div className=" max-w-sm  m-auto">
                   <img className="m-auto rounded-[5%] opacity-85" src="/adrianosmall2.jpg" decoding="async" alt="profile picture of Adriano" />
                 </div>
               </div>
@@ -162,7 +162,7 @@ export default function HomeComponent() {
                 }}
               >
                 {/* skillbox: */}
-                <div className="lg:py-10 md:py-6 sm:py-6 cursor-all-scroll">
+                <div className="lg:py-3 md:py-2 sm:py-6 cursor-all-scroll">
                   <Slider {...settings}>
                     <img src="/sass.png" alt="sass" className="h-12" />
                     <img src="/reactjs.png" alt="reactjs" className="h-12" />

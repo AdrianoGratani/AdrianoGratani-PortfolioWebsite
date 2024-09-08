@@ -6,6 +6,8 @@ import CallToAction from "./components/CallToAction/CallToAction";
 import HomeComponent from "./components/HomeComponent/HomeComponent";
 import MySlider from "./components/SliderCard/MySlider";
 
+import '../../i18n';
+
 const hind = Hind({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
@@ -45,13 +47,12 @@ export default function Home() {
               className={`max-w-4xl md:pl-[80px] px-5 text-[16px] text-[#47626d] leading-8 mt-5 ${hind.className}`}
             >
               This section showcases a selection of my recent projects. I have
-              developed games like Pac-Man, Pong, and Space Invaders, as well as
-              a portfolio website using Sass. Additionally, I have created
+              developed games like Pac-Man, Pong, and Space Invaders, and much more. Additionally, I have created
               educational resources on fundamental algorithms and data
               structures.
               <br></br>
-              Please, click on each link to see more. There&apos;s a link
-              attached to my GitHub profile as well where you can read and
+              Please, click on each project to see more. There&apos;s a link
+              attached to my GitHub profile where you can read and
               download the source code as well.
               <br></br>
               Swipe towards right or left to explore my portfolio projects.
