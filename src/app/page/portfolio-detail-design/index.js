@@ -29,6 +29,8 @@ export default function Index({ id, data, DataArray }) {
   //   }
   // });
   useEffect(() => {
+    document.title = "Projects | Adriano Gratani "
+    
     if (JSON.parse(id) === DataArray.length - 1) {
       setNext(0);
     } else {
