@@ -46,9 +46,7 @@ export default function AboutMe() {
     }
   };
 
-  useEffect(()=> {
-    document.title = "AboutMe | AdrianoGratani"
-  },[])
+
 
   return (
     <React.Fragment>
