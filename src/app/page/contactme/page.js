@@ -1,13 +1,15 @@
 "use client";
 import { Hind } from "next/font/google";
-import React, { useState } from "react";
+import React, { useState} from "react";
 import { AiFillMail, AiOutlineFieldTime } from "react-icons/ai";
 import { FaLocationDot } from "react-icons/fa6";
 import { FiPhoneCall } from "react-icons/fi";
 // import { ToastClassName, ToastContainer, toast } from "react-toastify";
 import { ToastContainer, toast } from "react-toastify";
-
+import Head from "next/head";
 import "react-toastify/dist/ReactToastify.css";
+
+
 
 const hind = Hind({
   subsets: ["latin"],
@@ -38,8 +40,13 @@ export default function Page() {
       }).catch((e) => {   console.log(e); setLoading(false);  clearState(); toast("something went wrong...");  });  
   };
 
+
   return (
     <React.Fragment>
+      <Head>
+        <title>Dynamic Page Title</title>
+        <meta name="description" content="Page description" />
+      </Head>
       <ToastContainer />
       <div className="flex flex-col items-center justify-center w-full pt-[80px] pb-[80px] mt-4">
         <div className="flex flex-col items-center justify-center bg-[#48afde] w-full h-[400px]">
