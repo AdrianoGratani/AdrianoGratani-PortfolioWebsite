@@ -47,7 +47,7 @@ export default function AboutMe() {
   };
 
   useEffect(()=> {
-    // document.title = "AboutMe | AdrianoGratani"
+    document.title = "AboutMe | AdrianoGratani"
   },[])
 
   return (
