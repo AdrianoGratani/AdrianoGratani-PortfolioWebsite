@@ -1,6 +1,6 @@
 "use client";
 import { Hind } from "next/font/google";
-import React, { useState} from "react";
+import React, { useState, useEffect} from "react";
 import { AiFillMail, AiOutlineFieldTime } from "react-icons/ai";
 import { FaLocationDot } from "react-icons/fa6";
 import { FiPhoneCall } from "react-icons/fi";
@@ -39,6 +39,11 @@ export default function Page() {
         if (!response.error) {  clearState();  toast(response.message);} else {  clearState();  toast("Thank you for sending a message."); }
       }).catch((e) => {   console.log(e); setLoading(false);  clearState(); toast("something went wrong...");  });  
   };
+
+
+  useEffect(()=> {
+    document.title = "ContactMe | AdrianoGratani"
+  },[])
 
 
   return (
