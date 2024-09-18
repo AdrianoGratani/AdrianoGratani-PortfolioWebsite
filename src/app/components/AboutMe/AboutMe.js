@@ -48,6 +48,13 @@ export default function AboutMe() {
 
 
 
+  useEffect(()=> {
+    const currentUrl = window.location.href;
+    if (currentUrl === "https://adrianogratani.vercel.app/#about-me-component") {
+      document.title = "AboutMe | AdrianoGratani"
+    } else null;
+  },[])
+
   return (
     <React.Fragment>
       <div
