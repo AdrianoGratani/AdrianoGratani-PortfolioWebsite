@@ -1,5 +1,5 @@
 import { Hind } from "next/font/google";
-import React from "react";
+import React, { useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
@@ -94,6 +94,10 @@ export default function HomeComponent() {
       },
     ],
   };
+
+  useEffect(()=> {
+    document.title = "Home | Adriano Gratani"
+  })
 
   return (
     <React.Fragment>
