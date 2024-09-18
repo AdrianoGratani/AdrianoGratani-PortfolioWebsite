@@ -2,7 +2,7 @@
 import { AboutData } from "@/app/data";
 import { Hind } from "next/font/google";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
 
 import './aboutme.css';
 
@@ -45,6 +45,10 @@ export default function AboutMe() {
       handleCardClick(AboutData[5], 5);
     }
   };
+
+  useEffect(()=> {
+    document.title = "AboutMe | AdrianoGratani"
+  },[])
 
   return (
     <React.Fragment>
