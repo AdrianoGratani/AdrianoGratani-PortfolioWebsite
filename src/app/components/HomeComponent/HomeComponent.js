@@ -96,7 +96,7 @@ export default function HomeComponent() {
   };
 
   useEffect(()=> {
-    document.title = "Home | Adriano Gratani"
+    // document.title = "Home | Adriano Gratani"
   })
 
   return (
