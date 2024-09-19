@@ -107,7 +107,7 @@ export const DataArray = [
   },
   {
     title: "Algorithm and Data Structure in Java: explained!",
-    name: "Algorithm / Data Structure Lessons/Explanations",
+    name: "Algorithms / Data Structures",
     des: "This is my work-in-progress: in the very next future I want to create a visual representation of each chapter with its own separate HTML/CSS animation, to visually represent the inner working process for each algorithm.",
     des1: "From basic array methods to Binary Search Tree, Queues and Stacks and heaps, this project for educational purposes will help me and (hopefully) other learners to grasp unintuitive concepts easily.",
 
