@@ -125,9 +125,7 @@ export default function Page() {
                     <div className="font-semibold text-[20px] tracking-wide">
                       <p>Call Me at:</p>
                     </div>
-                    <div>
-                      <p className="text-[#666666]">+39 351 519 3695</p>
-                    </div>
+               
                     <div>
                       <p className="text-[#666666]">+39 347 199 0421 (WhatsApp)</p>
                     </div>
@@ -157,43 +155,13 @@ export default function Page() {
                     <div>
                       <p className="text-[#666666]">adriano.gratani1@gmail.com</p>
                     </div>
-                    <div>
-                      <p className="text-[#666666]">adriano.gratani2@gmail.com</p>
-                    </div>
+
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          {/* card */}
-          <div className="px-[20px]">
-            <div className="sm:flex gap-[20px] mt-[50px] max-w-[1105px] w-full h-full">
-              <div className="flex flex-col flex-1 xl:flex-row gap-[20px]">
-                <div
-                  className="flex flex-col py-[35px] px-[45px] rounded-lg shadow-lg cursor-pointer transition-all transform duration-300 hover:bg-[#223740] hover:text-white hover:-translate-y-4 bg-white "
-                  style={{ boxShadow: "#48afde -1px 1px 10px 0px" }}
-                >
-                  <div className="flex items-center gap-[15px] ">
-                    <AiOutlineFieldTime size={40} color="#48afde" />
-                  </div>
-                  <div className="flex flex-col">
-                    <div className="text-[#48afde] text-[14px]">
-                      <p className="">Working Time</p>
-                    </div>
-                    <div className="font-semibold text-[20px] tracking-wide">
-                      <p>7 days / week</p>
-                    </div>
-                    <div>
-                      <p className="text-[#666666]">Mon - Sat: 9am - 9pm</p>
-                    </div>
-                    <div>
-                      <p className="text-[#666666]">Sun: 9am - 13 pm</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+
         </div>
 
         {/* contact me page layout: */}

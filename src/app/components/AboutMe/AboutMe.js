@@ -59,7 +59,7 @@ export default function AboutMe() {
     <React.Fragment>
       <div
         id="about-me-component"
-        className="bg-[#E0F3FD] pt-[250px] mt-4  pb-[100px] lg:pb-[600px] relative lg:h-[800px]"
+        className="bg-[#E0F3FD] pt-[200px] mt-4  pb-[50px] lg:pb-[60px] relative lg:h-[600px]"
       >
         <div className="container m-auto">
           <h1 className="text-[240px] w-[80%] overflow-hidden absolute lg:left-40 md:left-30 top-[-50px]  text-[#EAF7FC]">
@@ -94,7 +94,7 @@ export default function AboutMe() {
               <br></br>
             </p>
             <p
-              className={`w-full lg:w-1/3 text-[#223740] mr-0 mb-5  lg:mr-4 font-[200] ${hind.className}`}
+              className={`w-full lg:w-1/3 text-[#223740] mr-0 lg:mr-4 font-[200] ${hind.className}`}
             >
               {" "}
               This attitude of mine propelled me on an endless journey to learn a variety of skills: Teaching skill, UI/UX,
