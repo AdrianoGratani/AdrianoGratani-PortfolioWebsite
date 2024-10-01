@@ -76,40 +76,33 @@ export default function AboutMe() {
               className={`w-full lg:w-1/3 text-[#223740] mr-0 mb-5  lg:mr-4 font-[200] ${hind.className}`}
             >
               {" "}
-              Welcome here! I&apos;m Adriano, born and raised in Sardinia, Italy, and currently living in South Korea.
-              I graduated from Music College with a degree in Classical Music, in which field I have been working 
-              for about 2 years. But then, I felt something was missing.<br></br>
-              Being aware of this, I suddenly realized that moving abroad, changing culture, job and replacing new habits, could have been the best choice to grow as an individual.
-              First, I chose to settle down near Milano, where I lived and worked for about one year, and later in Halle, Germany, for one more year.
-              When a chance of spending a full year in South Korea has been given to me, I accepted immediately.
-              In fact, I spent almost two years there, mostly in Seoul, but I travelled over the whole country.
+              Welcome here! I&apos;m Adriano! 
+              I graduated from Music College in Italy with a degree in Classical Music, in which field I have been working 
+              for about 2 years. <br></br>
+              When a chance of moving to South Korea has been given to me, I accepted immediately.
+              In fact, I spent about two years in Seoul, and now I live in Geoje. <br></br>
+              While living in Seoul I attended many Coding Meetups.
+              There, I met many programmers, learned the basics of HTML and CSS, and eventually got more and more curious about coding. 
             </p>
             <p
               className={`w-full lg:w-1/3 text-[#223740] mr-0 mb-5  lg:mr-4 font-[200] ${hind.className}`}
             >
               {" "}
-              While living in Seoul I discoverd about Coding Meetups organized by FreeCodeCamp, and I joined many of them.
-              There, I learned the basics of HTML and CSS. Since then, I have become more and more curious about it,
-              and started to think that maybe this is the right field for me. But my knowledge, back then, was limited...
-              <br></br>
-              Organizers and fellow peers have been kind enough to help me a lot through the entire process, by showing me courses, free courses,
-              and coding bootcamps. It was a whole new world!!!
-              I was already employed at that time, so it was possible for me only to study at night time, at my own pace: that&apos;s why 
-              I studied, for the first four months, with a Front-End developer course provided by Coursera. 
-            </p>
-            <p
-              className={`w-full lg:w-1/3 text-[#223740] mr-0 mb-5  lg:mr-4 font-[200] ${hind.className}`}
-            >
-              {" "}
-              After that, I started to build many projects, mostly in React, vanilla JS, HTML, CSS (or TailwindCSS), and algorithms as well (mostly in Java).
+              I immediately started to build many projects, mostly in React, but also in vanilla JS, HTML, CSS (or TailwindCSS), and algorithms as well (mostly in Java).
               I love to learn and to teach/explain: I was a classical guitar teacher for few years, and this valuable experience
               granted me the ability to learn, in a fast and efficient way, a wide range of knowledge in many different areas.
+              <br></br>
+            </p>
+            <p
+              className={`w-full lg:w-1/3 text-[#223740] mr-0 mb-5  lg:mr-4 font-[200] ${hind.className}`}
+            >
+              {" "}
               This attitude of mine propelled me on an endless journey to learn a variety of skills: Teaching skill, UI/UX,
               front-end development and even a little bit of backend...
               As I mentioned earlier, when I encounter a new problem, I usually conduct extensive
               research on it, in order to comprehend it and discover cutting-edge
               and innovative approaches for dealing with similar problems in the
-              future. Down below, I&apos;ve listed a lot of my coding skills:
+              future. Down below, I&apos;ve listed my coding skills:
             </p>
           </section>
         </div>

@@ -48,16 +48,13 @@ export default function Home() {
             <p
               className={`max-w-4xl md:pl-[80px] px-5 text-[16px] text-[#47626d] leading-8 mt-5 ${hind.className}`}
             >
-              This section showcases a selection of my recent projects. I have
-              developed games like Pac-Man, Pong, and Space Invaders, and much more. Additionally, I have created
-              educational resources on fundamental algorithms and data
-              structures.
+              This section showcases a selection of my recent projects. 
               <br></br>
               Please, click on each project to see more. There&apos;s a link
               attached to my GitHub profile where you can read and
               download the source code as well.
               <br></br>
-              Swipe towards right or left to explore my portfolio projects.
+              (Swipe towards right or left to explore my portfolio projects.)
             </p>
           </div>
         </div>

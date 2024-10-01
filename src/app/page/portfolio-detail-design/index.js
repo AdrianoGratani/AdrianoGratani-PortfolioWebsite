@@ -62,6 +62,9 @@ export default function Index({ id, data, DataArray }) {
   //   }
   // });
 
+  let idString = JSON.parse(id);
+  console.log(idString + "ID")
+
   return (
     <React.Fragment>
       <div className="overlay h-[400px] lg:top-[96px] sm:top-0 z-20 border-t border-gray-300"></div>
@@ -127,31 +130,44 @@ export default function Index({ id, data, DataArray }) {
               {data?.des1}
             </p>
             <span>
-              <div className="bg-[#48afde] px-5 py-8 text-center rounded-xl font-light">
-                <a href={data?.link}>
-                  <button className="">Visit my {data.name} page</button>
+              <div className={`${idString === 4 || idString === 3? "hidden" : ""}bg-[#48afde] px-5 py-8 text-center rounded-xl font-light`}>
+                <a href={data?.link} className={`${idString === 3 || idString === 4 ? "hidden" :""}`}>
+                  <button className="">Play {data.name}</button>
+                </a>
+              </div>
+            </span>
+            <span>
+              <div className=" bg-[#48afde] mt-5 px-5 py-8 text-center rounded-xl font-light">
+                <a href={data?.link2}>
+                  <button className="">Check my code!</button>
                 </a>
               </div>
             </span>
 
             <div className="flex flex-wrap mt-7">
-              <h1 className="mr-5 text-[14px]  bg-[#63c5f1] lg:bg-[#EEF7FB]  px-2 py-1  rounded-xl font-sans  mb-4 text-white lg:text-[#6A787D]">
+              <h1 className={`${idString === 3 || idString === 4 ? "hidden" :""} mr-5 text-[14px]  bg-[#63c5f1] lg:bg-[#EEF7FB]  px-2 py-1  rounded-xl font-sans  mb-4 text-white lg:text-[#6A787D]`}>
                 Canva/JavaScript
               </h1>
               <h1 className="mr-5 text-[14px]  bg-[#63c5f1] lg:bg-[#EEF7FB]  px-2 py-1  rounded-xl font-sans  mb-4 text-white lg:text-[#6A787D]">
-                Algorithm
+                Algorithms
               </h1>
               <h1 className="mr-5 text-[14px]  bg-[#63c5f1] lg:bg-[#EEF7FB]  px-2 py-1  rounded-xl font-sans  mb-4 text-white lg:text-[#6A787D]">
-                OOP
+                {`${idString === 4 ? "" : "OOP"}`}
               </h1>
-              <h1 className="mr-5 text-[14px]  bg-[#63c5f1] lg:bg-[#EEF7FB]  px-2 py-1  rounded-xl font-sans  mb-4 text-white lg:text-[#6A787D]">
+              <h1 className={`${idString !== 3 ? "hidden": ""} mr-5 text-[14px]  bg-[#63c5f1] lg:bg-[#EEF7FB]  px-2 py-1  rounded-xl font-sans  mb-4 text-white lg:text-[#6A787D]`}>
+                Java
+              </h1>
+              <h1 className={`${idString === 3 || idString === 4 ? "hidden": ""} mr-5 text-[14px]  bg-[#63c5f1] lg:bg-[#EEF7FB]  px-2 py-1  rounded-xl font-sans  mb-4 text-white lg:text-[#6A787D]`}>
                 Retro-gaming
               </h1>
-              <h1 className="mr-5 text-[14px]  bg-[#63c5f1] lg:bg-[#EEF7FB]  px-2 py-1  rounded-xl font-sans  mb-4 text-white lg:text-[#6A787D]">
+              <h1 className={`${idString !== 4 ? "hidden": ""} mr-5 text-[14px]  bg-[#63c5f1] lg:bg-[#EEF7FB]  px-2 py-1  rounded-xl font-sans  mb-4 text-white lg:text-[#6A787D]`}>
+                Sass / SCSS
+              </h1>
+              <h1 className={`${idString === 3 || idString === 4 ? "hidden" : ""} mr-5 text-[14px]  bg-[#63c5f1] lg:bg-[#EEF7FB]  px-2 py-1  rounded-xl font-sans  mb-4 text-white lg:text-[#6A787D]`}>
                 Event-Listeners
               </h1>
-              <h1 className="mr-5 text-[14px]  bg-[#63c5f1] lg:bg-[#EEF7FB]  px-2 py-1  rounded-xl font-sans  mb-4 text-white lg:text-[#6A787D]">
-                Winning/Collision Conditionals
+              <h1 className={`${idString === 3 || idString === 4 ? "hidden" : ""}mr-5 text-[14px]  bg-[#63c5f1] lg:bg-[#EEF7FB]  px-2 py-1  rounded-xl font-sans  mb-4 text-white lg:text-[#6A787D]`}>
+               { `${idString === 3 || idString === 4 ? "" :"Winning/Collision Conditionals"}`}
               </h1>
             </div>
           </div>
