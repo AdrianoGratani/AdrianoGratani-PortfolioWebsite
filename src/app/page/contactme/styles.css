@@ -1,0 +1,28 @@
+.input_selected {
+    transition: width 0.8s, box-shadow 0.4s ease-in-out, background-color 0.5s;
+}
+
+.input_selected:hover {
+    box-shadow: #48afde -5px 0px 50px 4px;
+}
+
+.input_selected:focus {
+    background-color: #777;
+    box-shadow: #999 -5px 0px 40px 1px;
+}
+
+.button_selected {
+    transition: box-shadow 0.1s ease-in-out;
+}
+
+.button_selected:hover {
+    box-shadow: #48afde -5px 0px 40px 10px;
+}
+
+
+/* on desktop input elements increase in size */
+@media all and (min-width: 800px) {
+    .input_selected:hover {
+        width: 400px; 
+    }
+}

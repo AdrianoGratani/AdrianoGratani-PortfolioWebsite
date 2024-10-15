@@ -9,6 +9,9 @@ import { ToastContainer, toast } from "react-toastify";
 import Head from "next/head";
 import "react-toastify/dist/ReactToastify.css";
 
+// input-on-hover styling:
+import  "../contactme/styles.css"
+
 
 
 const hind = Hind({
@@ -53,34 +56,34 @@ export default function Page() {
         <meta name="description" content="Page description" />
       </Head>
       <ToastContainer />
-      <div className="flex flex-col items-center justify-center w-full pt-[80px] pb-[80px] mt-4">
-        <div className="flex flex-col items-center justify-center bg-[#48afde] w-full h-[400px]">
-          <div className="flex flex-col items-center justify-center w-full h-full bg-[#223740]">
-            <div className="text-center bg-[#48afde] py-[3px] px-[11px] tracking-wide uppercase font-semibold text-[20px] text-white rounded-lg">
-              <a href="#contact" className="cursor-pointer">
-                Contact Form
-              </a>
-            </div>
-            <div className="mt-[10px]">
-              <h1 className="recoletaBold text-5xl text-[#48afde] p-2 text-center tracking-wide">
+      {/* whole page container: */}
+      <div className=" flex flex-col items-center justify-center w-full pt-[80px] pb-[80px] mt-4">
+        {/*upper title container:  */}
+        <div className="flex flex-col items-center justify-center w-full h-[300px]">
+          <div className="flex flex-col items-center justify-center w-full h-full">
+            {/* blue line: */}
+            <div className=" bg-[#48afde] py-[3px] xl:px-[600px] px-[400px] rounded-lg"></div>
+            <div className="mt-[20px]">
+              <h1 className=" recoletaBold text-5xl text-[#48afde] p-2 text-center tracking-wide">
                 Hire Me
               </h1>
             </div>
             <div className="flex justify-center text-center mt-[10px] md:w-[700px]">
-              <p className="text-white font-[300px] text-center text-xl">
-                My skills and my will to learn more everyday about coding are available for your goals, Let&apos;s stay in touch!
+              <p className="text-black font-[300px] text-center text-xl">
+                My skills are available for your goals.<br/> Let&apos;s stay in touch!
               </p>
             </div>
           </div>
         </div>
 
-        <div className="flex pb-40">
-          {/* card */}
+        {/* all contact cards container: */}
+        <div className="md:flex xl:flex mb-[60px]">
+          {/* single card container: */}
           <div className="px-[20px]">
-            <div className="sm:flex  gap-[20px] mt-[50px] max-w-[1105px] w-full h-full">
+            <div className="sm:flex  gap-[20px] mt-[50px] max-w-[1105px] w-full h-[300px]">
               <div className="flex flex-col flex-1 xl:flex-row gap-[20px]">
                 <div
-                  className="flex flex-col py-[35px] px-[45px] rounded-lg shadow-lg cursor-pointer transition-all transform duration-300 hover:bg-[#223740] hover:text-white hover:-translate-y-4 bg-white "
+                  className="flex flex-col py-[35px] px-[45px] rounded-lg shadow-lg cursor-pointer transition-all transform duration-300 hover:bg-black hover:text-white hover:-translate-y-4 bg-white "
                   style={{ boxShadow: "#48afde -1px 1px 10px 0px" }}
                 >
                   <div className="flex items-center gap-[15px] ">
@@ -88,19 +91,19 @@ export default function Page() {
                   </div>
                   <div className="flex flex-col">
                     <div className="text-[#48afde] text-[14px]">
-                      <p className="">Location</p>
+                      <p className="mt-[10px]">Location</p>
                     </div>
                     <div className="font-semibold text-[20px] tracking-wide">
-                      <p>I currently live in:</p>
+                      <p className="mt-[10px]">I currently live in:</p>
                     </div>
                     <div>
-                      <p className="text-[#666666]">Geoje</p>
+                      <p className="text-[#48afde] text-2xl mt-[10px]">Geoje,</p>
                     </div>
                     <div>
-                      <p className="text-[#666666]">S. Gyeongsang Province</p>
+                      <p className="text-[#48afde] text-2xl" >S. Gyeongsang Province,</p>
                     </div>
                     <div>
-                      <p className="text-[#666666]">South Korea</p>
+                      <p className="text-[#48afde] text-2xl">South Korea</p>
                     </div>
                   </div>
                 </div>
@@ -109,10 +112,10 @@ export default function Page() {
           </div>
           {/* card 2*/}
           <div className="px-[20px]">
-            <div className="sm:flex gap-[20px] mt-[50px] max-w-[1105px] w-full h-full">
+            <div className="sm:flex gap-[20px] mt-[50px] max-w-[1105px] w-full h-[300px]">
               <div className="flex flex-col flex-1 xl:flex-row gap-[20px]">
                 <div
-                  className="flex flex-col py-[35px] px-[45px] rounded-lg shadow-lg cursor-pointer transition-all transform duration-300 hover:bg-[#223740] hover:text-white hover:-translate-y-4 bg-white "
+                  className="flex flex-col py-[35px] px-[45px] rounded-lg shadow-lg cursor-pointer transition-all transform duration-300 hover:bg-black hover:text-white hover:-translate-y-4 bg-white "
                   style={{ boxShadow: "#48afde -1px 1px 10px 0px" }}
                 >
                   <div className="flex items-center gap-[15px] ">
@@ -120,14 +123,14 @@ export default function Page() {
                   </div>
                   <div className="flex flex-col">
                     <div className="text-[#48afde] text-[14px]">
-                      <p className="">Phone Contacts</p>
+                      <p className="mt-[10px]">Phone Contacts</p>
                     </div>
                     <div className="font-semibold text-[20px] tracking-wide">
-                      <p>Call Me at:</p>
+                      <p className="mt-[10px]">Call Me at:</p>
                     </div>
                
                     <div>
-                      <p className="text-[#666666]">+39 347 199 0421 (WhatsApp)</p>
+                      <p className="text-[#48afde] text-2xl mt-[10px]">+39 347 199 0421 (WhatsApp)</p>
                     </div>
                   </div>
                 </div>
@@ -136,10 +139,10 @@ export default function Page() {
           </div>
           {/* card 3*/}
           <div className="px-[20px]">
-            <div className="sm:flex gap-[20px] mt-[50px] max-w-[1105px] w-full h-full">
+            <div className="sm:flex gap-[20px] mt-[50px] max-w-[1105px] w-full h-[300px]">
               <div className="flex flex-col flex-1 xl:flex-row gap-[20px]">
                 <div
-                  className="flex flex-col py-[35px] px-[45px] rounded-lg shadow-lg cursor-pointer transition-all transform duration-300 hover:bg-[#223740] hover:text-white hover:-translate-y-4 bg-white "
+                  className="flex flex-col py-[35px] px-[45px] rounded-lg shadow-lg cursor-pointer transition-all transform duration-300 hover:bg-black hover:text-white hover:-translate-y-4 bg-white "
                   style={{ boxShadow: "#48afde -1px 1px 10px 0px" }}
                 >
                   <div className="flex items-center gap-[15px] ">
@@ -147,13 +150,13 @@ export default function Page() {
                   </div>
                   <div className="flex flex-col">
                     <div className="text-[#48afde] text-[14px]">
-                      <p className="">My Email</p>
+                      <p className="mt-[10px]">My Email</p>
                     </div>
                     <div className="font-semibold text-[20px] tracking-wide">
-                      <p>Write me at:</p>
+                      <p className="mt-[10px]">Write me at:</p>
                     </div>
                     <div>
-                      <p className="text-[#666666]">adriano.gratani1@gmail.com</p>
+                      <p className="text-[#48afde] text-2xl mt-[10px]">adriano.gratani1@gmail.com</p>
                     </div>
 
                   </div>
@@ -163,106 +166,80 @@ export default function Page() {
           </div>
 
         </div>
-
-        {/* contact me page layout: */}
-        <div
-          id="#contact"
-          className="flex flex-col xl:flex-row justify-center gap-[60px] mt-[40px] px-[30px] max-w-[1105px] m-auto p-10 mb-[-150px] "
-        >
-          <div className="hidden md:block relative w-[50px] xl:w-[550px] rounded-xl md:w-full lg:w-[50%]">
-            <div className="absolute h-full w-full bg-gradient-to-t from-[#223740] via-[#223740] shadow-inner opacity-70">
-              <div className="absolute inset-0 flex flex-col gap-[20px] items-center justify-center text-white shadow-lg">
-                {/* <div className="text-4xl xl:mt-[150px] mt-0 rounded-full px-[15px] py-[15px] bg-[#48afde] text-white">
-                  <FaHeadphones />
-                </div> */}
-                {/* <div className="font-semibold text-[24px]">
-                  Contact Me for more infos!!!
-                </div>
-                <div className="">
-                  <p className="text-center mt-5 font-[200px] text-xl">
-                    {" "}
-                    say something here...
-                  </p>
-                </div> */}
-                  {/* <button className="bg-[#48afde] text-white mb-[30px] px-4 py-2 hover:bg-[#223740] transition-color rounded-xl">
-                    Send Me a Text
-                  </button> */}
-              </div>
+        <div className=" bg-[#48afde] py-[3px] px-[600px] rounded-lg mb-[40px]">
             </div>
-          </div>
-        </div>
+   
+        <div className="bg-white h-[600px] w-[400px] rounded-md">
+            <h2 className="text-5xl text-center">Contact Me</h2>
+            {/* form input and button container */}
+            <div className="bg-slate-500 mt-[20px]">
+              <form onSubmit={handleSubmit} className="bg-white">
 
-        {/*  don't need this.... delete it */}
-        <div className="flex flex-col gap-[10px] m-auto">
-          <div className="">Contact Me</div>
-        {/* form: */}
-          <form
-            className={`flex flex-col flex-grow-4 sm:flex-row gap-[20px] ${hind.className}`}
-          onSubmit={handleSubmit}
-          >
-            <div
-              className={`flex flex-col sm:flex-row gap-[20px] ${hind.className}`}
-            >
-              <input
-                type="text"
-                name="name"
-                placeholder="Enter Your Name..."
-                required
-                onChange={handleChange}
-                value={state.name}
-                className="px-[12px] outline-none rounded-md py-[12px] flex-1 bg-gray-200"
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="Enter Your e-mail..."
-                required
-                onChange={handleChange}
-                value={state.email}
-                className="px-[12px] outline-none rounded-md py-[12px] flex-1 bg-gray-200"
-              />
-              <input
-                type="text"
-                name="phoneNumber"
-                placeholder="Enter Your Phone Number..."
-                required
-                onChange={handlePhoneChange}
-                value={state.phoneNumber}
-                className="px-[12px] outline-none rounded-md py-[12px] flex-1 bg-gray-200"
-              />
-              <input
-                type="text"
-                name="subject"
-                placeholder="Which Subject..."
-                required
-                onChange={handleChange}
-                value={state.subject}
-                className="px-[12px]  outline-none rounded-md py-[12px] flex-1 bg-gray-200"
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Enter Your Name..."
+                  required
+                  onChange={handleChange}
+                  value={state.name}
+                  className={`input_selected bg-[#48afde] placeholder:text-white w-[360px] my-[20px] ml-[20px] p-[20px] outline-none rounded-md ${hind.className}`}
+
                 />
-            </div>
-            
-            <div className="flex flex-col gap-[10px] m-auto">
-              <div className={`${hind.className}`}>
+                <br/>
+
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter Your e-mail..."
+                  required
+                  onChange={handleChange}
+                  value={state.email}
+                  className={`input_selected bg-[#48afde] placeholder:text-white w-[360px] my-[20px] ml-[20px] p-[20px] outline-none rounded-md ${hind.className}`}
+                />
+                <br/>
+
+                <input
+                  type="text"
+                  name="phoneNumber"
+                  placeholder="Enter Your Phone Number..."
+                  required
+                  onChange={handlePhoneChange}
+                  value={state.phoneNumber}
+                  className={`input_selected bg-[#48afde] placeholder:text-white w-[360px] my-[20px] ml-[20px] p-[20px] outline-none rounded-md ${hind.className}`}
+                />
+                <br/>
+
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Which Subject..."
+                  required
+                  onChange={handleChange}
+                  value={state.subject}
+                  className={`input_selected bg-[#48afde] placeholder:text-white w-[360px] my-[20px] ml-[20px] p-[20px] outline-none rounded-md ${hind.className}`}
+                />
+                <br/>
                 <textarea
                   required
                   name="message"
                   onChange={handleChange}
                   placeholder="Text goes here..."
-                  className="px-[12px] w-full outline-none h-[180px] rounded-md py-[12px] flex-1 bg-gray-200"
+                  className={`input_selected bg-[#48afde] placeholder:text-white w-[360px] my-[20px] ml-[20px] p-[20px] outline-none rounded-md ${hind.className}`}
                 />
-              </div>
-              {
-                  loading && (<div className="mb-3 text-center ml-5 w-6 h-6 border-t-2 border-blue-600 border-solid animate-spin rouned-full"></div> )
-              }
-              <div>
-                <button className="bg-[#48afde] w-full sm:w-auto px-[30px] py-[12px] hover:bg-[#223740] transition-colors duration-300 font-semibold rounded-lg text-white ">
+                <br/>
+                {
+                  loading && (<div className="mb-3 text-center ml-5 w-6 h-6 border-t-2 border-blue-600 border-solid animate-spin rounded-full"></div> )
+                }
+                <button className="button_selected bg-[#48afde] w-[360px] my-[20px] ml-[20px] p-[15px] outline-none rounded-md text-4xl">
                   Send Your Message
                 </button>
-              </div>
-
+            
+              </form>
             </div>
-          </form>
         </div>
+
+      
+
       </div>
     </React.Fragment>
   );
