@@ -85,7 +85,7 @@ export const DataArray = [
     name: "Geoje Explorer",
     des: "This is a complete website and my biggest project so far, please check it out. It provides all the informations to potential tourists of the Island of Geoje. Full-responsive, it follows UI and UX principles very strictly, from readability to color contrast to tab indexes. Metatags for Open Graph Protocol, and SEO robots tags are used to improve shareabity and index position in search browsers",
     des1: "Every algorithm, all the Js, CSS animations and all the SVG maps are 'handmade'. from start to first build it took me seven weeks, but I keep working on this project.",
-    images: ["/a.jpg", "/api.jpg", "/b.jpg"],
+    images: ["/a.png", "/api.png", "/b.png"],
     link: "https://pacman-adrianogratanis-projects.vercel.app/",
     link2: "https://github.com/AdrianoGratani/pacman"
   },
